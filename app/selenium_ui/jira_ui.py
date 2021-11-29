@@ -16,8 +16,10 @@ def test_1_selenium_browse_boards_list(jira_webdriver, jira_datasets, jira_scree
 
 
 def test_1_selenium_create_issue(jira_webdriver, jira_datasets, jira_screen_shots):
-    modules.create_issue(jira_webdriver, jira_datasets)
+     modules.create_issue(jira_webdriver, jira_datasets)
 
+def test_1_selenium_custom_action(jira_webdriver, jira_datasets, jira_screen_shots):
+    extension_ui.app_specific_action(jira_webdriver, jira_datasets)
 
 def test_1_selenium_edit_issue(jira_webdriver, jira_datasets, jira_screen_shots):
     modules.edit_issue(jira_webdriver, jira_datasets)
